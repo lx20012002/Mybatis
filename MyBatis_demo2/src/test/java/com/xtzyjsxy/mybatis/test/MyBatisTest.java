@@ -93,7 +93,7 @@ public class MyBatisTest {
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(is);
         SqlSession sqlSession = sqlSessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-        Map<String,Object> map =  userMapper.getUserByIdToMap(1);
+        Map<String,Object> map =  userMapper.getUserByIdToMap(4);
         System.out.println(map);
     }
 }
