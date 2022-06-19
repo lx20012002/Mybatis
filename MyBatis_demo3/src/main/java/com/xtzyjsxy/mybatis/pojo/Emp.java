@@ -7,6 +7,29 @@ public class Emp {
     private Character sex;
     private String email;
     private Integer did;
+    private Dept dept;
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "eid=" + eid +
+                ", empName='" + empName + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", email='" + email + '\'' +
+                ", did=" + did +
+                ", dept=" + dept +
+                '}';
+    }
+
+    public Dept getDept() {
+        return dept;
+    }
+
+    public void setDept(Dept dept) {
+        this.dept = dept;
+    }
+
+
 
     public Emp() {
     }
@@ -18,18 +41,6 @@ public class Emp {
         this.sex = sex;
         this.email = email;
         this.did = did;
-    }
-
-    @Override
-    public String toString() {
-        return "Emp{" +
-                "eid=" + eid +
-                ", empName='" + empName + '\'' +
-                ", age=" + age +
-                ", sex=" + sex +
-                ", email='" + email + '\'' +
-                ", did=" + did +
-                '}';
     }
 
     public Integer getEid() {

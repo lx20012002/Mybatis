@@ -96,4 +96,6 @@ public class MyBatisTest {
         Map<String,Object> map =  userMapper.getUserByIdToMap(9);
         System.out.println(map);
     }
+
+
 }

@@ -7,7 +7,15 @@
         default：默认连接的数据库的id
     -->
 
+
     <properties resource="jdbc.properties"/>
+    <!--
+        设置MyBatis全局配置
+        -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
 
     <typeAliases>
         <typeAlias type="com.xtzyjsxy.mybatis.pojo.Emp" alias="emp"></typeAlias>
